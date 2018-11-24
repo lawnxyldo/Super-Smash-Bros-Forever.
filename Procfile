@@ -1,1 +1,1 @@
-worker: node bot.js Bad Pulse Forever
+worker: node bot.js
