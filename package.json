@@ -1,14 +1,14 @@
 {
-  "name": "bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "alexpgm",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^11.3.2"
-  }
+	"name": "Discord-Bot-Maker-Bot",
+	"author": "Robert Borghese",
+	"version": "1.2.9",
+  "main": "bot.js",
+   "scripts": {
+   "start": "node bot.js"
+   },
+"dependencies": {
+		"discord.js": "^11.2.0",
+		"fstorm": "^0.1.3",
+		"jimp": "^0.2.28"
+	}
 }
