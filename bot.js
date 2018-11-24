@@ -1,15 +1,19 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+/*
+ * Discord Bot Builder Bot
+ * Version 1.2.0
+ * Robert Borghese
+ */
 
-client.on('ready', () => {
-    console.log('I am ready!');
+const Files = require(require('path').join(__dirname, 'js', 'Main.js')).Files;
+
+if(!process.send) {
+
+Files.initStandalone();
+
+} else {
+
+process.on('message', function(content) {
+	Files.initBotTest(content);
 });
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+}
